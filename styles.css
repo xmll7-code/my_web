@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Orqa fon rangini qora qilish */
+    font-family: 'Arial', sans-serif;
+    color: #fefefe; /* Matn rangini oq qilish */
+}
+
+.container {
+    text-align: center;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.instagram-logo, .google-logo {
+    width: 50px; /* Logolarni kichikroq qilish */
+    height: auto;
+    margin: 0 10px; /* Logolar orasidagi masofani to'g'irlash */
+}
+
+.title {
+    font-size: 24px; /* Matnni kattalashtirish */
+    margin: 0 10px; /* Matn va logolar orasidagi masofani to'g'irlash */
+}
+
+.login-box, .signup-box {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1c1c1e; /* Korpus rangini to'q kul rang qilish */
+    border: 1px solid #2c2c2e; /* Chegarani to'q kul rang qilish */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px;
+    margin-left: -8px;
+    border: 1px solid #2c2c2e; /* Chegarani to'q kul rang qilish */
+    border-radius: 4px;
+    background-color: #3a3a3c; /* Oq kiritingan joy rangini o'zgartirish */
+    color: #fefefe; /* Kiritingan joydagi matn rangini oq qilish */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007acb;
+}
+
+.or {
+    margin: 20px 0;
+    color: #8e8e8e;
+}
+
+.fb-login {
+    background-color: #4267b2;
+}
+
+.forgot-password {
+    color: #00376b;
+    font-size: 14px;
+    margin-top: 15px;
+    display: block;
+}
+
+.signup-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #1c1c1e; /* Korpus rangini to'q kul rang qilish */
+    border: 1px solid #2c2c2e; /* Chegarani to'q kul rang qilish */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    .login-box, .signup-box {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .logo-box .instagram-logo, .logo-box .google-logo {
+        width: 40px; /* Logolarni kichikroq qilish */
+    }
+
+    .logo-box .title {
+        font-size: 20px; /* Matnni kichikroq qilish */
+    }
+
+    form input, button {
+        padding: 8px;
+    }
+}
